@@ -1,0 +1,263 @@
+body {
+    color: black;
+    background-color: rgb(92, 88, 88);
+    background-image: url("npoo.jpg");
+    background-attachment: scroll;
+}
+
+#navbar {
+    color: white;
+    font-size: larger;
+    font-weight: 700;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0, 0);
+    border-radius: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    line-height: 5px;
+    box-shadow: 0px 20px 20px 5px #00f7ff80;
+    animation: fade 3s ease-in-out;
+}
+
+li.MarsTech {
+    color: rgb(0, 255, 255);
+    font-size: 25px;
+    text-align: center;
+    padding: 22px 30px 14px 20px;
+    font-weight: 1000;
+    letter-spacing: 3px;
+    transform: scaleY(1.5);
+    transform: scaleX(1.25);
+    float: left;
+    translate: 0 15px;
+    cursor: default;
+}
+
+li a:not(.oof):not(#settings) {
+    float: left;
+    text-align: center;
+    font-size: larger;
+    line-height: 100%;
+    translate: 0 15px;
+}
+
+li a,
+.dropbtn {
+    display: list-item;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: rgb(0, 0, 0, 0);
+    font-size: larger;
+}
+
+li:not(#settings) a:hover {
+    background-color: #0f8286;
+    cursor: pointer;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ff0000;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.oof {
+    color: white;
+}
+
+div.text {
+    background-color: #00ffff99;
+    text-align: left;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 15px;
+    padding: 0.025%;
+    padding-left: 3%;
+    height: 100%;
+}
+
+p.text {
+    background-color: #808080cc;
+    text-align: left;
+    border-radius: 15px;
+    height: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 1%;
+    font-size: 30px;
+}
+
+p.textInDiv {
+    background-color: #808080cc;
+    text-align: left;
+    border-radius: 15px;
+    height: 100%;
+    margin: 0;
+    padding: 1%;
+    font-size: 30px;
+}
+
+.todo {
+    font-size: small;
+}
+
+h1 {
+    font-size: xxx-large;
+}
+
+.slideInContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: 350px;
+    flex-direction: column;
+}
+
+div.slideIn {
+    background-color: #808080;
+    border-radius: 25px;
+    width: fit-content;
+    margin: 5%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    right: 5000px;
+}
+
+div.animationsAreOn {
+    animation: slide-in 1s forwards;
+}
+
+img.slideIn {
+    border-radius: inherit;
+    margin: 0;
+    padding: 0;
+    background-color: #3c3a3a;
+    height: 250px;
+    width: 375px;
+}
+
+h2.slideIn {
+    font-size: xx-large;
+    color: white;
+    margin: 2% 2% 2% 1px;
+    padding: 2% 2% 20px 1px;
+}
+
+div.slideIn:nth-child(1) {
+    animation-delay: 0s;
+}
+
+div.slideIn:nth-child(2) {
+    animation-delay: 1s;
+}
+
+div.slideIn:nth-child(3) {
+    animation-delay: 2s;
+}
+
+
+@keyframes slide-in {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(5000px);
+    }
+}
+
+#settings {
+    translate: 650px -15px;
+    cursor: pointer;
+}
+
+.cog {
+    height: 50px;
+    width: 50px;
+    fill: white;
+}
+
+.toggle-switch-checkbox {
+    display: none;
+}
+
+.toggle-switch-label {
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+    background-color: rgb(255, 0, 0);
+    border-radius: 40px;
+    position: relative;
+    cursor: pointer;
+}
+
+.toggle-switch-checkbox:checked+.toggle-switch-label {
+    background-color: #00ffff99;
+}
+
+.toggle-switch-label::before {
+    content: "";
+    position: absolute;
+    top: 2.5px;
+    background-color: #808080;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+    height: 34px;
+    width: 34px;
+    left: 6px;
+    bottom: 6px;
+}
+
+.toggle-switch-checkbox:checked+.toggle-switch-label::before {
+    transform: translateX(35px);
+    background-color: rgb(0, 255, 13);
+}
+
+.switch {
+    width: 80px;
+    height: 40px;
+}
+
+div.text {
+    font-size: x-large;
+}
+
+div.settings {
+    background-color: #808080;
+}
+
+div.switch {
+    translate: 1000px -15px;
+}
+
+div.settingsLabel {
+    translate: 0 20px;
+}
