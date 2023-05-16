@@ -24,6 +24,3 @@ function receiveData() {
         alert("No data available.");
     }
 }
-while(true){
-receiveData();
-};
